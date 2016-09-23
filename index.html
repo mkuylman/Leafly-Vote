@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Vote | Leafly</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Page style -->
+    <link href="css/page-style.css" rel="stylesheet">
+    <!-- jQuery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest Compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Page JS -->
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/instafeed.min.js"></script>
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <script src="js/html5.js"></script>
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    <link rel="shortcut icon" href="img/icons/favicon.png">
+    <!-- You can use Open Graph tags to customize link previews.
+      Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+    <meta property="og:url"           content="http://landing-page-staging.s3-website-us-west-2.amazonaws.com/" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="Your Website Title" />
+    <meta property="og:description"   content="Your description" />
+    <meta property="og:image"         content="http://www.your-domain.com/path/image.jpg" />
+
+
+<script>
+var versaTag = {};
+versaTag.id = "6002";
+versaTag.sync = 0;
+versaTag.dispType = "js";
+versaTag.ptcl = "HTTPS";
+versaTag.bsUrl = "bs.serving-sys.com/BurstingPipe";
+//VersaTag activity parameters include all conversion parameters including custom parameters and Predefined parameters. Syntax: "ParamName1":"ParamValue1", "ParamName2":"ParamValue2". ParamValue can be empty.
+versaTag.activityParams = {
+//Predefined parameters:
+"Session":""
+//Custom parameters:
+};
+//Static retargeting tags parameters. Syntax: "TagID1":"ParamValue1", "TagID2":"ParamValue2". ParamValue can be empty.
+versaTag.retargetParams = {};
+//Dynamic retargeting tags parameters. Syntax: "TagID1":"ParamValue1", "TagID2":"ParamValue2". ParamValue can be empty.
+versaTag.dynamicRetargetParams = {};
+// Third party tags conditional parameters and mapping rule parameters. Syntax: "CondParam1":"ParamValue1", "CondParam2":"ParamValue2". ParamValue can be empty.
+versaTag.conditionalParams = {};
+</script>
+<script id="ebOneTagUrlId" src="https://secure-ds.serving-sys.com/SemiCachedScripts/ebOneTag.js"></script>
+<noscript>
+<iframe src="https://bs.serving-sys.com/BurstingPipe?
+cn=ot&amp;
+onetagid=6002&amp;
+ns=1&amp;
+activityValues=$$Session=[Session]$$&amp;
+retargetingValues=$$$$&amp;
+dynamicRetargetingValues=$$$$&amp;
+acp=$$$$&amp;"
+style="display:none;width:0px;height:0px"></iframe>
+</noscript>
+
+
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+</head>
+
+<body>
+
+<div id="fb-root"></div>
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WD9D9H"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WD9D9H');</script>
+
+<div class="container-fluid" id="top-gradient">
+</div>
+
+<div class="container" id="head">
+    <div id="header" class="col-sm-12">
+        <a href="https://www.leafly.com/">
+            <img id="leafly-vote" class="img-responsive pull-left" src="img/_assets/vote-logo.png" alt="Leafly">
+        </a>
+        <h1 id="headline">WHAT'S YOUR REASON?</h1>
+    </div>
+</div>
+
+<div class="container-fluid" id="navigation">
+    <nav class="container">
+        <ul class="nav nav-justified" id="top-nav">
+            <li class="active"><a id="tab-1" href="index.html">LEARN</a>
+                <div id="hybrid"></div>
+            </li>
+            <li><a href="pages/vote.html">VOTE</a>
+            </li>
+            <li><a href="pages/share.html">SHARE</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 flex-xs-top">
+            <h1 id="share">SHARE YOUR REASON</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 flex-xs-bottom" id="share-reason">
+            <span id="reason">My reason is:
+                <input id="my-reason" type="text" maxlength="123">
+                <a href="https://twitter.com/intent/tweet" class="btn twitter" id="tweet-my-reason" target="_blank"></a>
+            </span>
+        </div>
+    </div>
+
+</div>
+
+<div class="container tab-content">
+    <div id="learn" class="tab-pane fade in active">
+        <div class="row">
+
+          <div class="col-sm-4">
+            <div class="left bucket">
+                <div class="embed-responsive embed-responsive-16by9 video">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_GFrGpgvt1I" frameborder="0" allowfullscreen></iframe>
+                </div>
+                    <p class="absolute-text">Patients and Families</p>
+                    <p class="intro">Meet Renee Petro</p>
+                        <div class="bucket-content">
+                            <p>Patients struggle to overcome; caregivers support them every day. Neither should have to live in fear of arrest for obtaining or taking medicine. </p>
+                            <p>Renee Petro, mother: “My son Branden has a rare form of epilepsy. Medical marijuana is helping him, and I’ve seen it help others. Please make our family’s medicine legal.”</p>
+                            <div class="container-fluid share-buttons">
+                                <a href="http://google.com" class="btn facebook"></a>
+                                <a href="http://google.com" class="btn twitter"></a>
+                                <a href="http://google.com" class="btn email"></a>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="bucket-content" id="patient-content">
+                            <div>
+                                <p class="fact">THE FACTS</p>
+                                <p>Medical cannabis can be used for seizures in children with Dravet Syndrome and other debilitating conditions. </p>
+                                <a class="read" href="https://www.leafly.com/news/science-tech/cbd-holds-promise-as-child-epilepsy-treatment-studies-find/">READ MORE</a>
+                                    <a href="http://google.com" class="btn twitter"></a>
+                                </div>
+                                <div>
+                                <p>Legalization doesn’t increase teen cannabis use.                                     
+                                </p>
+                                <a class="read" href="https://www.leafly.com/news/science-tech/heres-why-cannabis-legalization-doesnt-lead-to-higher-teen-use-ra/">READ MORE</a>
+                                <a href="http://google.com" class="btn twitter"></a>
+                             </div>
+                        </div>
+            </div>
+            <div class="left bucket">
+                <div class="embed-responsive embed-responsive-16by9 video">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/EK2xqd6f8nk" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <p class="absolute-text">Military Veterans</p>
+                <p class="intro">Meet Christopher Lengyel</p>
+                        <div class="bucket-content">
+                            <p>More than 375,000 U.S. veterans live with symptoms of PTSD. Medical cannabis helps many of them control the condition and live productive, satisfying lives.</p>
+                            <p>Christopher Lengyel, veteran: “My PTSD symptoms are managed with the proper use of cannabis. It allowed me to get off pharmaceutical drugs that were destroying my body. My reason for legalization is to save lives.”</p>
+                            <div class="container-fluid share-buttons">
+                                <a href="http://google.com" class="btn facebook"></a>
+                                <a href="http://google.com" class="btn twitter"></a>
+                                <a href="http://google.com" class="btn email"></a>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="bucket-content" id="military-content">
+                            <div>
+                                <p class="fact">THE FACTS</p>
+                                <p>Thousands of veterans are dropping opioids and controlling their PTSD with safer medical cannabis.
+                                </p>
+                                <a class="read" href="https://www.leafly.com/news/health/cannabis-and-post-traumatic-stress-disorder-ptsd/">READ MORE</a>
+                                <a href="http://google.com" class="btn twitter"></a>
+
+                                <p>In too many states, the veterans who fought for our freedoms face arrest and imprisonment for accessing the medical cannabis they need to treat the wounds of war.
+                                </p>
+                                <a class="read" href="https://www.leafly.com/news/politics/watch-this-texas-veterans-mic-drop-moment-to-a-senator/">READ MORE</a>
+                                <a href="http://google.com" class="btn twitter"></a>
+
+
+                            </div>
+                        </div>
+
+             </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="bucket" id="safer-communities">
+                <div class="embed-responsive embed-responsive-16by9 video">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/sm1OoQA9yqY" frameborder="0" allowfullscreen></iframe>
+                </div>
+                    <p class="absolute-text">Safer Communities</p>
+                    <p class="intro">Meet Diane Goldstein</p>
+                <div class="bucket-content">
+                            <p>Regulated legalization allows police to focus on serious crime, not needless arrests that waste tax money, ruin productive lives and pack our prisons.</p>
+                            <p>Lt. Cmdr. Diane Goldstein (Ret.): “Legalization will reduce the power of dangerous cartels and let police focus on serious crime. Responsible regulation will improve public health and safety for everyone.”</p>
+                            <div class="container-fluid share-buttons">
+
+                                <div class="fb-share-button" data-href="http://vote-staging.s3-website-us-west-2.amazonaws.com/#safer-communities" data-layout="button" data-size="small" data-mobile-iframe="true">
+                                    <a class="fb-xfbml-parse-ignore btn facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fvote-staging.s3-website-us-west-2.amazonaws.com%2F%23safer-communities&amp;src=sdkpreparse"></a>
+                                </div>
+
+                                <a href="https://twitter.com/intent/tweet?button_hashtag=whatsyourreason" class="btn twitter" data-text="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.." data-url="http://landing-page-staging.s3-website-us-west-2.amazonaws.com/#safer-communities" data-hashtags="whatsyourreason" data-show-count="false" target="_blank"></a>
+
+                                <a href="mailto:?subject=I wanted you to see this site&amp;body=Check out this site http://landing-page-staging.s3-website-us-west-2.amazonaws.com/#safer-communities" class="btn email" title="Share by Email" target="_blank"></a>
+
+                            </div>
+                </div>
+                <hr>
+                <div class="bucket-content" id="additional-content">
+                    <div>
+                        <p class="fact">THE FACTS</p>
+                        <p>Since the introduction of adult-use legalization in four states, the amount of cannabis seized by the Border Patrol has dropped 24 percent. 
+                        </p>
+                        <a class="read" href="https://www.leafly.com/news/politics/top-ten-arguments-for-legalization/">READ MORE</a>
+                        <a href="http://google.com" class="btn twitter"></a>
+
+                        <p>In 2010, the U.S. spent more than $3.6 billion enforcing cannabis prohibition. 
+                        </p>
+                        <a class="read" href="https://www.leafly.com/news/politics/top-ten-arguments-for-legalization/ ">READ MORE </a>
+                        <a href="http://google.com" class="btn twitter"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bucket">
+                <div class="embed-responsive embed-responsive-16by9 video">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/UjcisfJGtdI" frameborder="0" allowfullscreen></iframe>
+                </div>
+                    <p class="absolute-text">Responsible Regulation</p>
+                <p class="intro">Meet Crystal and Kevin</p>
+                <div class="bucket-content">
+                    <p>Let’s replace drug cartels and street dealers with legal farmers, licensed processers, and friendly independent retailers.</p>
+                    <p>Crystal and Kevin Oliver, farmers: “It’s a challenge to succeed as independent farmers. But we’re making it, thanks to the sun, the soil, and a legal regulated system.” </p>
+                    <div class="container-fluid share-buttons">
+                        <a href="http://google.com" class="btn facebook"></a>
+                        <a href="http://google.com" class="btn twitter"></a>
+                        <a href="http://google.com" class="btn email"></a>
+                    </div>
+                    
+                </div>                           
+                <hr>
+                <div class="bucket-content" id="regulation-content">
+                    <p class="fact">THE FACTS</p>
+                    <p>Colorado created 10,000 new jobs in the legal cannabis industry.</p>
+                    <a class="read" href="https://www.leafly.com/news/industry/how-to-get-hired-to-work-in-the-medical-cannabis-industry-part-1/">READ MORE</a>
+                    <a href="http://google.com" class="btn twitter"></a>
+                 
+                    <p>Seed-to-sale tracking software insure that regulation works for everyone. 
+                    </p>
+                    <a class="read" href="https://www.leafly.com/news/cannabis-101/seed-to-sale-how-legal-cannabis-is-grown/">READ MORE</a>
+                    <a href="http://google.com" class="btn twitter"></a>
+                </div>
+
+            </div>
+
+
+          </div>
+
+          <div class="col-sm-4">
+            <div class="bucket">
+                <div class="embed-responsive embed-responsive-16by9 video">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/L3_GM06J89k" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <p class="absolute-text">Medical Cannabis</p>
+                <p class="intro">Meet Dr. Clifford Selsky</p>
+                        <div class="bucket-content">
+                            <p>Millions of patients find relief with medical cannabis. The federal government’s own studies show its effectiveness. It’s time to unlock the full potential of cannabinoid medicine.</p>
+                            <p>“I support medical marijuana because the plant’s components have a strong effect on pain control and symptoms of other disorders. This is medicine. A lot of suffering can be helped by the use of cannabis compounds.” </p>
+                            <div class="container-fluid share-buttons">
+                                <a href="http://google.com" class="btn facebook"></a>
+                                <a href="http://google.com" class="btn twitter"></a>
+                                <a href="http://google.com" class="btn email"></a>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="bucket-content" id="medical-content">
+                            <div>
+                            <p class="fact">THE FACTS</p>
+                                <p>Legalization allows police to fight real crime. In 2010, the U.S. spent more than $3.6 billion enforcing cannabis prohibition. That money, time, and energy should be better spent fighting real crime.
+                                </p>
+                                <a class="read" href="https://www.leafly.com/news/politics/top-ten-arguments-for-legalization/ ">READ MORE</a>
+                                <a href="http://google.com" class="btn twitter"></a>
+                                <p>Dr. Sanjay Gupta, once a famous medical cannabis skeptic, spent months researching the science and concluded he’d been wrong; “there are very legitimate medical applications,” he said.
+                                </p>
+                                <a class="read" href="http://www.leafscience.com/2013/09/26/dr-sanjay-guptas-top-10-quotes-marijuana/">READ MORE</a>
+                                <a href="http://google.com" class="btn twitter"></a>
+                                <div>
+                                    <p>Find out more about conditions and symptoms connected to medical cannabis:
+
+                                    <a class="conditions" href="https://www.leafly.com/news/health/cannabis-for-chronic-pain-vs-opioids/ ">Chronic Pain</a> |
+                                    <a class="conditions" href="https://www.leafly.com/news/science-tech/cbd-holds-promise-as-child-epilepsy-treatment-studies-find/">Epilepsy</a> |
+                                    <a class="conditions" href="https://www.leafly.com/news/health/cannabis-and-arthritis/">Arthritis</a> |
+                                    <a class="conditions" href="https://www.leafly.com/news/health/cannabis-and-post-traumatic-stress-disorder-ptsd/">PTSD</a> |
+                                    <a class="conditions" href="https://www.leafly.com/news/health/medical-cannabis-multiple-sclerosis-treatment/">Multiple Scelrosis</a> |
+                                    <a class="conditions" href="https://www.leafly.com/news/health/cannabis-and-insomnia">Insomnia</a> |
+                                    <a class="conditions" href="https://www.leafly.com/news/health/medical-marijuana-fibromyalgia-treatment/">Fibromyalgia</a> 
+                                    <a href="http://google.com" class="btn twitter"></a>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+          </div>
+        </div>
+       
+    </div>
+</div>
+
+
+<div class="container-fluid footer" id="vote-footer">
+    <div class="row">
+        <div class="col-sm-2">
+        </div>
+        <div class="col-sm-4 footer-tag">
+            <h2 class="title-tag">DISCOVER THE FACTS ABOUT CANNABIS</h2>
+        </div>
+        <div class="col-sm-4 footer-sign">
+            <p>Voters in nine states will consider some form of cannabis legalization in November. Many are still undecided. That’s okay. People come to this issue with a wide range of experiences and assumptions. We’re here to offer facts, studies, and real-life testimonials from people who support legalization. Make up your own mind—and share your belief with others.</p>
+            <span class="signup">SIGN UP TO LEARN MORE</span>
+            <form method="post" action="http://link.leafly.com/s/Master">
+                <div class="form-group input-group">
+                    <input type="email" name="email" placeholder="Email Address" class="input-group__field site-footer__newsletter-input" autocorrect="off" autocapitalize="off">
+                    <div class="input-group__btn">
+                        <button id="newsletter-signup">SIGN UP</button>
+                        <input type="hidden" name="vars[source]" value="your-reason-lp" />
+                        <input type="hidden" name="redirect" value="/" />
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-sm-2">
+        </div>
+    </div>
+</div>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+</script>
+
+</body>
+
+</html>

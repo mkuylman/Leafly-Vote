@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Vote | Leafly</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Page style -->
+    <link href="../css/page-style.css" rel="stylesheet">
+    <!-- jQuery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest Compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Page JS -->
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/instafeed.min.js"></script>
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <script src="../js/html5.js"></script>
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    <link rel="shortcut icon" href="../img/icons/favicon.png">
+    <!-- You can use Open Graph tags to customize link previews.
+      Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+    <meta property="og:url"           content="http://vote-staging.s3-website-us-west-2.amazonaws.com/pages/vote.html" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="Vote | Leafly" />
+    <meta property="og:description"   content="Vote | Leafly" />
+    <meta property="og:image"         content="http://vote-staging.s3-website-us-west-2.amazonaws.com/img/_assets/vote-logo.png" />
+
+
+<script>
+var versaTag = {};
+versaTag.id = "6002";
+versaTag.sync = 0;
+versaTag.dispType = "js";
+versaTag.ptcl = "HTTPS";
+versaTag.bsUrl = "bs.serving-sys.com/BurstingPipe";
+//VersaTag activity parameters include all conversion parameters including custom parameters and Predefined parameters. Syntax: "ParamName1":"ParamValue1", "ParamName2":"ParamValue2". ParamValue can be empty.
+versaTag.activityParams = {
+//Predefined parameters:
+"Session":""
+//Custom parameters:
+};
+//Static retargeting tags parameters. Syntax: "TagID1":"ParamValue1", "TagID2":"ParamValue2". ParamValue can be empty.
+versaTag.retargetParams = {};
+//Dynamic retargeting tags parameters. Syntax: "TagID1":"ParamValue1", "TagID2":"ParamValue2". ParamValue can be empty.
+versaTag.dynamicRetargetParams = {};
+// Third party tags conditional parameters and mapping rule parameters. Syntax: "CondParam1":"ParamValue1", "CondParam2":"ParamValue2". ParamValue can be empty.
+versaTag.conditionalParams = {};
+</script>
+<script id="ebOneTagUrlId" src="https://secure-ds.serving-sys.com/SemiCachedScripts/ebOneTag.js"></script>
+<noscript>
+<iframe src="https://bs.serving-sys.com/BurstingPipe?
+cn=ot&amp;
+onetagid=6002&amp;
+ns=1&amp;
+activityValues=$$Session=[Session]$$&amp;
+retargetingValues=$$$$&amp;
+dynamicRetargetingValues=$$$$&amp;
+acp=$$$$&amp;"
+style="display:none;width:0px;height:0px"></iframe>
+</noscript>
+
+</head>
+
+<body>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WD9D9H"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WD9D9H');</script>
+
+    <div class="container-fluid" id="top-gradient">
+    </div>
+
+<div class="container" id="head">
+    <div id="header" class="col-sm-12">
+        <a href="https://www.leafly.com/">
+            <img id="leafly-vote" class="img-responsive pull-left" src="../img/_assets/vote-logo.png" alt="Leafly">
+        </a>
+        <h1 id="headline">WHAT'S YOUR REASON?</h1>
+    </div>
+</div>
+
+    <div class="container-fluid" id="navigation">
+      <nav class="container">
+        <ul class="nav nav-justified" id="top-nav">
+          <li class="active"><a href="../index.html">LEARN</a>
+          </li>
+          <li ><a id="tab-2" href="vote.html">VOTE</a>
+            <div id="sativa"></div>
+          </li>
+          <li><a href="share.html">SHARE</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 flex-xs-top">
+            <h1 id="share">SHARE YOUR REASON</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 flex-xs-bottom" id="share-reason">
+            <span id="reason">My reason is:
+                <input id="my-reason" type="text" maxlength="123">
+                <a href="https://twitter.com/intent/tweet" class="btn twitter" id="tweet-my-reason" target="_blank"></a>
+            </span>
+        </div>
+    </div>
+
+</div>
+    
+        <div id="vote" class="container">
+          <div class="row">
+
+            <div class="col-sm-4">
+              <div class="bucket">
+                <div class="relative">
+                  <img class="img-responsive state-image" src="../img/_assets/Montana.jpeg" alt="Vote for Marijuana Legalization in Montana">         
+                </div>
+                <p class="state-text">Montana</p>
+                <div class="bucket-content" id="montana">
+                  <ul>
+                    <li>Measure 6 & Measure 7 both legalize medical cannabis. </li>
+                    <li>Measure 6 is a constitutional amendment.</li>
+                    <li>Measure 7 is a statewide initiative.</li>
+                    <li>Qualifying conditions include: cancer, glacoma, HIV/AIDS, hepatitis C, ALS, Tourette’s syndrome, Crohn’s disease, ulcerative colitis, PTSD, severe arthritis, fibromyalgia, Alzheimer’s disease, wasing syndrome, peripheral neuropathy, intractable pain, severe nausea, seizures, severe and persistent muscle spasms, multiple sclerosis. </li>
+                    <li>Measure 6 establishes at least 20, no more than 40 dispensaries statewide.</li>
+                    <li>Measure 7 establishes up to 39 nonprofit “cannabis care centers” statewide.</li>
+                    <li>Measure 7 allows patients >20 miles from dispensary to grow 10 plants. Measure 6 does not.</li>
+                  </ul>
+                  <div class="container-fluid share-buttons">
+                    <a href="http://google.com" class="btn facebook"></a>
+                    <a href="http://google.com" class="btn twitter"></a>
+                    <a href="http://google.com" class="btn email"></a>
+                  </div>
+                </div>
+                <button id="montana-register" class="btn-block register"><a class="register-link" href="https://app.mt.gov/voterinfo/" target="_blank">REGISTER TO VOTE</a></button>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="bucket" id="arizona">
+                <div class="relative">
+                  <img class="img-responsive" src="../img/_assets/Arizona.png" alt="Vote for Marijuana Legalization in Arizona">
+                </div>
+                <p class="state-text">Arizona</p>
+                <div class="bucket-content">
+                  <ul>
+                    <li>Prop. 205 allows adults 21+ to possess up to 1 oz. of cannabis.</li>
+                    <li>Private consumption only.</li>
+                    <li>Limited home growing allowed: 
+                      <ul>
+                        <li>Up to 6 plants per person, in an enclosed locked space.</li>
+                        <li>Up to 12 plants total per residence.</li> 
+                      </ul>  
+                    </li>
+                    <li>State agency will oversee a licensed, regulated industry.</li>
+                    <li>Number of retail stores is capped at 10% of total liquor stores.</li>
+                    <li>Local municipalities may enact limits on cannabis businesses.</li>
+                    <li>15% excise tax goes to schools and substance abuse prevention.</li>
+                  </ul>
+                  <div class="container-fluid share-buttons">
+
+                    <div class="fb-share-button" data-href="http://vote-staging.s3-website-us-west-2.amazonaws.com/pages/vote.html#arizona" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore btn facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fvote-staging.s3-website-us-west-2.amazonaws.com%2Fpages%2Fvote.html%23arizona&amp;src=sdkpreparse"></a></div>
+
+                    <a href="http://www.twitter.com/intent/tweet?button_hashtag=whatsyourreason&text=Whatever+your+reason%2C+vote+proudly+and+encourage+others+to+do+the+same.&url=http://www.leafly.com/vote/pages/vote.html#arizona" class="btn twitter" ></a>
+
+                    <a href="mailto:?subject=I wanted you to see this site&amp;body=Check out this site http://vote-staging.s3-website-us-west-2.amazonaws.com/pages/vote.html#arizona" class="btn email" title="Share by Email" target="_blank"></a>
+                  </div>
+                </div>
+                <button id="arizona-register" class="btn-block register"><a class="register-link" href="https://voter.azsos.gov/VoterView/RegistrantSearch.do" target="_blank">REGISTER TO VOTE</a></button>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="bucket">
+                <div class="relative">
+                  <img class="img-responsive" src="../img/_assets/California.png" alt="Vote for Marijuana Legalization in California" id="ca-image">
+                </div>
+                <p class="state-text">California</p>
+                <div class="bucket-content">
+                  <ul>
+                    <li>Prop. 64 allows adults 21+ to possess up to 1 oz. of cannabis.</li>
+                    <li>Private consumption only.</li>
+                    <li>Home growing allowed, up to 6 plants per residence.</li>
+                    <li>Allows cities to ban outdoor home grows but not indoor grows.</li>
+                    <li>Local municipalities may tax, regulate, or ban cannabis businesses.</li>
+                    <li>Cannabis businesses must be 600 feet from schools.</li>
+                    <li>Prohibits advertising cannabis products to children.</li>
+                    <li>State Bureau of Marijuana Control will oversee a licensed, regulated industry. </li>
+                    <li>Establishes seed-to-sale tracking of all cannabis.</li>
+                    <li>Prop 64 does not pre-empt 2018 state regulation of medical cannabis.</li>
+                  </ul>
+                  <div class="container-fluid share-buttons">
+                    <a href="http://google.com" class="btn facebook"></a>
+                    <a href="http://google.com" class="btn twitter"></a>
+                    <a href="http://google.com" class="btn email"></a>
+                  </div>
+                </div>
+                <button id="california-register" class="btn-block register"><a class="register-link" href="http://www.sos.ca.gov/elections/registration-status/" target="_blank">REGISTER TO VOTE</a></button>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-sm-4">
+              <div class="left bucket">
+                <div class="relative">
+                  <img class="img-responsive state-image" src="../img/_assets/Nevada.png" alt="Vote for Marijuana Legalization in Nevada">            
+                </div>
+                <p class="state-text">Nevada</p>
+                <div class="bucket-content">
+                  <ul>
+                    <li>Question 2 allows adults 21+ to possess 1 oz. of cannabis.</li>
+                    <li>Private consumption only.</li>
+                    <li>Limited indoor home growing allowed:</li>
+                      <ul>
+                        <li>Up to 6 plants per person, 12 per residence. </li>
+                      </ul>
+                    <li>Workplace restrictions are allowed. </li>
+                    <li>State agency will oversee a licensed, regulated industry</li>
+                    <li>Cannabis businesses must be at least 1,000 feet from schools.</li>
+                    <li>Limits Clark County (Las Vegas) to 80 cannabis retailers.</li>
+                    <li>Limits Washoe County (Reno) to 20 cannabis retailers.</li>
+                    <li>15% excise tax goes toward regulation and schools.</li>
+                    <li>Question 2 does not affect existing medical marijuana laws.</li>
+                  </ul>
+                  <div class="container-fluid share-buttons">
+                    <a href="http://google.com" class="btn facebook"></a>
+                    <a href="http://google.com" class="btn twitter"></a>
+                    <a href="http://google.com" class="btn email"></a>
+                  </div>
+                </div>
+                <button id="nevada-register" class="btn-block register"><a class="register-link" href="https://nvsos.gov/VoterSearch/" target="_blank">REGISTER TO VOTE</a></button>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="bucket">
+                <div class="relative">
+                  <img class="img-responsive state-image" src="../img/_assets/Florida.png" alt="Vote for Marijuana Legalization in Florida">      
+                </div>
+                <p class="state-text">Florida</p>
+                <div class="bucket-content">
+                  <ul>
+                    <li>Amendment 2 allows medical use of cannabis for patients with qualifying conditions.</li>
+                    <li>Qualifying conditions include: </li>
+                      <ul>
+                        <li>Cancer, epilepsy, glaucoma, HIV/AIDS, PTSD, ALS, Crohn’s disease, Parkinson’s disease, multiple sclerosis, and other physician-determined conditions.</li>
+                      </ul>
+                    <li>Allows physicians to recommend medical cannabis without risk of arrest. </li>
+                    <li>Allows the licensing of Medical Marijuana Treatment Centers where patients may access their medicine.</li>
+                    <li>State Dept. of Health will oversee and regulate the medical cannabis system. </li>
+                    <li>Qualifying patients will be issued ID cards.</li>
+                    <li>Patient confidentiality is required by law.</li>
+                  </ul>
+                  <div class="container-fluid share-buttons">
+                    <a href="http://google.com" class="btn facebook"></a>
+                    <a href="http://google.com" class="btn twitter"></a>
+                    <a href="http://google.com" class="btn email"></a>
+                  </div>
+                </div>
+                <button id="florida-register" class="btn-block register"><a class="register-link" href="http://dos.myflorida.com/media/693757/dsde39.pdf" target="_blank">REGISTER TO VOTE</a></button>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="bucket">
+                <div class="relative">
+                  <img class="img-responsive state-image" src="../img/_assets/Maine.png" alt="Vote for Marijuana Legalization in Maine">
+                </div>
+                <p class="state-text">Maine</p>
+                <div class="bucket-content">
+                  <ul>
+                    <li>Question 1 allows adults 21+ to possess up to 2.5 oz. of cannabis.</li>
+                    <li>Private consumption only.</li>
+                    <li>Allows licensed cannabis social clubs.</li>
+                    <li>Allows home growing: 6 flowering plants, 12 immature.</li>
+                    <li>Outdoor home grow is OK if not publicly visible.</li>
+                    <li>State agency will license and regulate cannabis businesses.</li>
+                    <li>The state can’t limit the number of retail cannabis stores.</li>
+                    <li>Local municipalities can limit or ban retail cannabis stores Grow canopy is capped at 800,000 square feet for entire state.</li>
+                    <li>40% of all grow licenses must go to small growers (<3,000 sq. ft.)</li>
+                  </ul>
+                  <div class="container-fluid share-buttons">
+                    <a href="http://google.com" class="btn facebook"></a>
+                    <a href="http://google.com" class="btn twitter"></a>
+                    <a href="http://google.com" class="btn email"></a>
+                  </div>
+                </div>
+                <button id="main-register" class="btn-block register"><a class="register-link" href="https://voterservices.elections.maryland.gov/VoterSearch" target="_blank">REGISTER TO VOTE</a></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="left bucket">
+                <div class="relative">
+                  <img class="img-responsive state-image" src="../img/_assets/Massachusetts.png" alt="Vote for Marijuana Legalization in Massachusetts">   
+                </div>
+                <p class="state-text">Massachusetts</p>
+                <div class="bucket-content">
+                  <ul>
+                    <li>Question 4 allows adults 21+ to possess up to 1 oz. of cannabis.</li>
+                    <li>Private consumption only.</li>
+                    <li>Limited home growing allowed:</li>
+                      <ul>
+                        <li>Up to 6 plants per person.</li>
+                        <li>Up to 12 plants total per residence.</li>
+                      </ul>
+                    <li>State agency will oversee a licensed, regulated industry.</li>
+                    <li>Employers allowed to maintain drug use policies.</li>
+                    <li>Local municipalities may limit, regulate, or ban cannabis businesses.</li>
+                    <li>3.75% state excise tax, plus 2% local tax.</li>
+                  </ul>
+                  <div class="container-fluid share-buttons">
+                    <a href="http://google.com" class="btn facebook"></a>
+                    <a href="http://google.com" class="btn twitter"></a>
+                    <a href="http://google.com" class="btn email"></a>
+                  </div>
+                </div>
+                <button id="nevada-register" class="btn-block register"><a class="register-link" href="https://www.sec.state.ma.us/VoterRegistrationSearch/MyVoterRegStatus.aspx" target="_blank">REGISTER TO VOTE</a></button>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="bucket">
+                <div class="relative">
+                  <img class="img-responsive state-image" src="../img/_assets/Arkansas.png" alt="Vote for Marijuana Legalization in Arkansas">
+                </div>
+                <p class="state-text">Arkansas</p>
+                <div class="bucket-content">
+                  <ul>
+                    <li>Initiative 182 amends Montana’s existing medical marijuana act.</li>
+                    <li>Allows doctors to certify medical cannabis for additional qualifying conditions.</li>
+                    <li>Additional conditions include chronic pain, PTSD.</li>
+                    <li>Legalizes licensed MMJ dispensaries and testing labs.</li>
+                    <li>Repeals the 3-patient limit for licensed providers.</li>
+                    <li> Repeals the 25-patient limit for doctors.</li>
+                    <li>Replaces police inspections with state agency inspections.</li>
+                  </ul>
+                  <div class="container-fluid share-buttons">
+                    <a href="http://google.com" class="btn facebook"></a>
+                    <a href="http://google.com" class="btn twitter"></a>
+                    <a href="http://google.com" class="btn email"></a>
+                  </div>
+                </div>
+                <button id="arkansas-register" class="btn-block register"><a class="register-link" href="http://www.sos.arkansas.gov/elections/Pages/request-app-through-mail.aspx/" target="_blank">REGISTER TO VOTE</a></button>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="bucket">
+                <div class="relative">
+                  <img class="img-responsive " src="../img/_assets/NorthDakota.jpg" alt="Vote for Marijuana Legalization in North Dakota">
+                </div>
+                <p class="state-text">North Dakota</p>
+                <div class="bucket-content">
+                  <ul>
+                    <li>Measure 5 legalizes the use of medical cannabis for qualifying conditions.</li>
+                    <li>Conditions include cancer, HIV/AIDS, hepatitis C, ALS, glaucoma, epilepsy, Alzheimer’s, Crohn’s disease, fibromyalgia, spinal stenosis, chronic back pain.</li>
+                    <li>Designated caregivers may provide cannabis to up to 5 patients.</li>
+                    <li>State Dept. of Health will issue MMJ cards to qualifying patients.</li>
+                    <li>Allows “compassion center” dispensaries.</li>
+                    <li>Dispensaries may grow up to 1,000 plants and inventory up to 3,500 oz. cannabis.</li>
+                    <li>Allows home grow of up to 8 plants, if patient or caregiver is 40+ miles from nearest dispensary.</li>
+                  </ul>
+                  <div class="container-fluid share-buttons">
+                    <a href="http://google.com" class="btn facebook"></a>
+                    <a href="http://google.com" class="btn twitter"></a>
+                    <a href="http://google.com" class="btn email"></a>
+                  </div>
+                </div>
+                <button id="north-dakota-register" class="btn-block register"><a class="register-link" href="https://vip.sos.nd.gov/IDRequirements.aspx?ptlhPKID=103&ptlPKID=7" target="_blank">REGISTER TO VOTE</a></button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+<div class="container-fluid footer" id="vote-footer">
+    <div class="row">
+        <div class="col-sm-2">
+        </div>
+        <div class="col-sm-4 footer-tag">
+            <h2 class="title-tag">VOTE TO LEGALIZE</h2>
+        </div>
+        <div class="col-sm-4 footer-sign">
+            <p>This November, millions of Americans in nine states have a chance to change the world. All it takes is a vote. We’ve prepared this short guide to ballot measures in each state. Vote to support patients, to enhance freedom, to regulate cannabis responsibly, to create good jobs—whatever your reason, vote proudly and encourage others to do the same.</p>
+            <span class="signup">SIGN UP TO LEARN MORE</span>
+            <form method="post" action="http://link.leafly.com/s/Master">
+                <div class="form-group input-group">
+                    <input type="email" name="email" placeholder="Email Address" class="input-group__field site-footer__newsletter-input" autocorrect="off" autocapitalize="off">
+                    <div class="input-group__btn">
+                        <button id="newsletter-signup">SIGN UP</button>
+                        <input type="hidden" name="vars[source]" value="your-reason-lp" />
+                        <input type="hidden" name="redirect" value="/" />
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-sm-2">
+        </div>
+    </div>
+</div>
+
+<div id="fb-root"></div>
+<script>
+(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+</script>
+
+</body>
+
+</html>

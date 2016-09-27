@@ -30,10 +30,66 @@
   }
 }
 
-@media only screen and (max-width: 1195px) {
-  #tweet-my-reason{
-    margin-top: 10px;
-    margin-left: 5px;
+
+@media only screen and (max-width: 1240px) {
+  #reason #my-reason{
+    width: 700px;
+  }
+}
+
+@media only screen and (max-width: 984px) {
+  #reason #my-reason{
+    width:400px;
+  }
+}
+
+@media only screen and (max-width: 736px) {
+  #reason #my-reason{
+    width:300px;
+  }
+}
+
+@media only screen and (max-width: 636px) {
+  #reason #my-reason{
+    width:200px;
+  }
+}
+
+@media only screen and (max-width: 412px) {
+  #reason #my-reason{
+    width:80px;
+  }
+}
+
+@media only screen and (max-width: 412px) {
+  #share-reason #reason { font-size: 18px; }
+}
+
+@media only screen and (max-width: 766px) {
+  .share-buttons{
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  #vote-footer .footer-sign{
+    padding-top: 0;
+    padding-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  #vote-footer .footer-tag{
+    padding-left: 10px;
+    padding-bottom: 0;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  #vote-footer .title-tag{
+    font-size: 24px;
   }
 }
 
@@ -42,14 +98,15 @@
   font-family: 'FontMuseo';
   src: url('fonts/fontmuseo/MuseoSans_100.otf');
   src: url('fonts/fontmuseo/MuseoSans_100.otf') format('opentype');
-  font-weight: lighter;
+  font-weight: bolder;
   font-style: normal;
 }
 
 body,
-html {
+html, * {
   font-family: FontMuseo, Helvetica, Arial, sans-serif;
-  letter-spacing: -1px;
+  font-size: 1rem;
+  color: #4A3828;
 }
 
 #top-gradient {
@@ -168,12 +225,15 @@ html {
 
 #reason {
   color: #9E968C;
-  font-size: 32px;
+  font-size: 20px;
+  display: inline-block;
+  width: 100%;
+  padding-left: 20px;
 }
 
 #share-reason {
   border: solid thin #e5e5e5;
-  padding: 10px 15px;
+  padding: 0 0 10px;
 }
 
 ul {
@@ -238,6 +298,7 @@ ul {
   font-size: 14px;
   border: 0;
   height: 40px;
+  margin-top: 5px;
 }
 
 #community-safety {
@@ -259,10 +320,7 @@ ul {
 
 p {
   margin-right: 7px;
-}
-
-#instagram-feed {
-  padding-bottom: 30px;
+  color: #4A3828;
 }
 
 #street {
@@ -273,6 +331,7 @@ p {
 #instafeed {
   max-height: 525px;
   max-width: 525px;
+  display: inline;
 }
 
 .register-link {
@@ -291,19 +350,20 @@ p {
 }
 
 #twitter-feed {
-  padding-left: 140px;
-  padding-bottom: 20px;
-  border-bottom: solid thin #e5e5e5;
+  display: block;
+  margin: auto;
+  width: 20%;
 }
 
 #my-reason {
   color: black;
   font-size: 20px;
   border: none;
-  min-width: 300px;
   border-bottom: solid thin #e5e5e5;
+  margin-top: 10px;
   margin-left: 5px;
   margin-right: 5px;
+  width: 70%;
 }
 
 #reason-twitter {
@@ -324,16 +384,11 @@ p {
   margin-bottom: 10px;
 }
 
-.bgimage {
-  width: 100%;
-  height: auto;
-
-}
 .absolute-text {
   bottom:0;
   font-size: 20px;
   font-family: FontMuseo;
-  background:rgba(212, 212, 212, 0.5);
+  background: #ECEAE6;
   padding:10px 20px;
   width:100%;
   text-align: left;
@@ -345,7 +400,7 @@ p {
   bottom:0;
   font-size: 20px;
   font-family: FontMuseo;
-  background:rgba(212, 212, 212, 0.5);
+  background: #ECEAE6;
   padding:10px 20px;
   width:100%;
   text-align: left;
@@ -354,6 +409,7 @@ p {
 
 #insta-direct {
   color: #6E335E;
+  font-size: 18px;
   padding-left: 80px;
 }
 
@@ -408,6 +464,11 @@ p {
   color: #76BD1D;
 }
 
+.read:visited {
+  text-decoration: none;
+  color: #76BD1D;
+}
+
 .conditions {
   color: #76BD1D;
   font-weight: bolder;
@@ -415,6 +476,11 @@ p {
 
 }
 .conditions:hover {
+  text-decoration: none;
+  color: #76BD1D;
+}
+
+.conditions:visited {
   text-decoration: none;
   color: #76BD1D;
 }
@@ -430,4 +496,30 @@ p {
   color: #ea5329;
   font-size: 20px;
   font-weight: bolder;
+}
+
+hr {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.more {
+  padding-bottom: 10px;
+  margin-top: -15px;
+}
+.state-image {
+  width:100%;
+}
+
+.instagram-link{
+  display: inline-block;
+}
+.insta-image{
+  height: 270px;
+  width: 100%;
+}
+
+#tweet-my-reason {
+  width: 0%;
+  margin-right: 0;
 }

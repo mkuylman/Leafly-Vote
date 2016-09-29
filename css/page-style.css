@@ -119,6 +119,12 @@
   }
 }
 
+@media only screen and (max-width: 766px) {
+  #learn #veterans {
+    margin-top: 45px;
+  }
+}
+
  /*  Museo Font */
 @font-face {
   font-family: 'FontMuseo';
@@ -508,13 +514,6 @@ p {
   color: #76BD1D;
 }
 
-.intro {
-  color: #76BD1D;
-  padding-left: 15px;
-  font-size: 20px;
-  font-weight: bolder;
-}
-
 .fact {
   color: #ea5329;
   font-size: 20px;
@@ -551,4 +550,8 @@ hr {
   color: #76BD1D;
   font-size: 32px;
   font-weight: bolder;
+}
+
+#veterans {
+  margin-top: 67px;
 }

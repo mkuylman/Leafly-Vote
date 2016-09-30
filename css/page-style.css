@@ -267,6 +267,7 @@ html, * {
 
 ul {
   margin-left: -20px;
+  margin-right: 10px;
 }
 
 .nav-justified {
@@ -553,5 +554,8 @@ hr {
 }
 
 #veterans {
-  margin-top: 67px;
+  margin-top: 63px;
+}
+#support {
+  letter-spacing: -1px;
 }
